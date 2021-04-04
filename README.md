@@ -44,3 +44,9 @@ I decided to take this one. It won't be a very extensive testing, since it will 
 In sum it will be 8 points (or +2 points if I'll have time to do responsive design)
 
 I decided not to choose the other features since some of them felt a bit confusing and needed more discussion. For example Fancy animations (1 pt) or Keyboard only function (1 pt). I emailed about the first one already and the answer I got was "use your skills to deliver a 'fancy animation' or a 'modern design' such as you would, given a client that doesn't quite know how to define it themselves but rather trust in your judgement.". Regarding the keyboard input it's also not very clear what that means. The only keyboard input I could think of was the search functionality, so I could use "Enter" to submit my filter for names and cities, but since I'm not going to do filtering in the features I chose, and if I'd do search I would filter the cards differently than pressing enter (so filter them every time a new letter comes in the search field). Some other features I didn't have much experience in doing, and decided not to pursue them
+
+# Questions
+
+- Don’t use our API, build your own API by scraping the current page and setting up a local backend server. How/If you persist is up to you. (4 pt)
+
+When working with the response, I saw that it has fields like "published", and "highlighted". For now from experience, I'm discarding employees that have "published" set to `false`. Not sure about the "highlighted" field. I will send an email to clarify this later, this shouldn't be hard to filter out if we need to (I added a function to filter the raw response, so it can be extended)
