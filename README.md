@@ -57,3 +57,5 @@ When working with the response, I saw that it has fields like "published", and "
 
 When working on the end-to end test (provided in backend/api/employees_test.go), I also decided to add a small unit tests as well for the filtering function (in backend/pkg/employee/employee_test.go), since that is pretty much the only function that exists in the API end point, that will filter out employees by criteria. It's not a big function, but to showcase Golang table testing and unit testing in general, I decided to throw it in as well, don't know if it's enough to cover this feature request
 - Unit tests for existing functionality (reasonable coverage) (2 pt)
+
+I was finished with the back-end part in a bit over 2 hours, got a bit stuck with organizing Golang modules and changing the router to simplify it but also support passing in arguments to handlers (so passing an argument to EmployeesHandler) to make it very simple to test
