@@ -47,6 +47,13 @@ I decided not to choose the other features since some of them felt a bit confusi
 
 # Questions
 
+1.
 - Don’t use our API, build your own API by scraping the current page and setting up a local backend server. How/If you persist is up to you. (4 pt)
 
 When working with the response, I saw that it has fields like "published", and "highlighted". For now from experience, I'm discarding employees that have "published" set to `false`. Not sure about the "highlighted" field. I will send an email to clarify this later, this shouldn't be hard to filter out if we need to (I added a function to filter the raw response, so it can be extended)
+
+2.
+- End-to-end testing (with an existing framework) (2 pt)
+
+When working on the end-to end test (provided in backend/api/employees_test.go), I also decided to add a small unit tests as well for the filtering function (in backend/pkg/employee/employee_test.go), since that is pretty much the only function that exists in the API end point, that will filter out employees by criteria. It's not a big function, but to showcase Golang table testing and unit testing in general, I decided to throw it in as well, don't know if it's enough to cover this feature request
+- Unit tests for existing functionality (reasonable coverage) (2 pt)
