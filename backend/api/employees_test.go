@@ -14,7 +14,7 @@ import (
 
 func TestEmployees(t *testing.T) {
 	mux := web.New()
-	mux.Get("/api/employees", EmployeesHandler(fetcher.FetcherMock{}))
+	mux.Get("/api/employees", EmployeesHandler(fetcher.Mock{}))
 
 	req, _ := http.NewRequest("GET", "/api/employees", nil)
 	rr := httptest.NewRecorder()

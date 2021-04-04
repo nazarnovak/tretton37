@@ -23,7 +23,7 @@ func EmployeesHandler(eg EmployeeGetter) func(w http.ResponseWriter, r *http.Req
 		}
 
 		// Now we need to filter some of the employees
-		filteredEmployees := employee.GetPublishedEmployees(employees)
+		filteredEmployees := employee.FilterEmployees(employees)
 
 		w.WriteHeader(http.StatusOK)
 		json.NewEncoder(w).Encode(filteredEmployees)

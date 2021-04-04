@@ -2,9 +2,9 @@ package fetcher
 
 import "github.com/nazarnovak/tretton37/backend/pkg/employee"
 
-type FetcherMock struct{}
+type Mock struct{}
 
-func (fm FetcherMock) GetAll() ([]employee.Employee, error) {
+func (m Mock) GetAll() ([]employee.Employee, error) {
 	return []employee.Employee{
 		{
 			Name:      "Nazar",
