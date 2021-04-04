@@ -3,6 +3,13 @@
 > Enclose a README with a short description of your product, the thoughts behind the design of your code, a list of the stories you selected and why you chose the features that you did.
 > It should also contain instructions on how to install, build and run the application.
 
+# How to run
+## Backend
+
+To run backend server, from `backend/` folder - do `go run main.go`
+To run backend end-to-end test, from `backend/api/` folder - do `go test`
+To run backend unit test, from `backend/pkg/employee` folder - do `go test`
+
 # Short description 
 
 TODO
